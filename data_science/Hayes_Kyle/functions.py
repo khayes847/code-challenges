@@ -382,7 +382,7 @@ def plot_continuous(data, target, new_cluster_0=False):
                                 (~((data2['Browser_Other'] > 1) |
                                    (data2['TrafficType_20'] > 1))))]
             data2 = data2.loc[~((data2['Target'] == 2) &
-                                (~((data2['Browser_Other'] > 1) |
+                                 (~((data2['Browser_Other'] > 1) |
                                    (data2['TrafficType_20'] > 1))))]
             data2 = data2.reset_index(drop=True)
         data_grouped = pd.DataFrame(data2['Target'])
